@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                  <label for="nama_staff">Nama Staff</label>
-                 <input type="text" name="nama_Staff" id="nama_Staff" required>
+                 <input type="text" name="nama_staff" id="nama_staff" required>
             </div>
             <div class="form-group">
                 <label for="posisi">Posisi</label>

@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "DELETE FROM `staff` WHERE Kd_Staff = '$kd_Staff'";
         $result = $koneksi->query($sql);
         if($result){
-            echo " Success\n$kd_Staff\n$sql";
+            echo " Success\n ";
         } else {
             echo " Gagal";
         }

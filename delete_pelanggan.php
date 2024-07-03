@@ -13,8 +13,8 @@
         <div id="message"></div>
         <form id="jasaForm">
             <div class="form-group">
-                <label for="kd_pelanggan">Kd Pelanggan</label>
-                <input type="text" name="kd_pelanggan" id="kd_pelanggan" required>
+                <label for="Kd_Pelanggan">Kd Pelanggan</label>
+                <input type="text" name="Kd_Pelanggan" id="Kd_Pelanggan" required>
             </div>
             <button type="button" onclick="callPhpFunction()">Hapus Data Pelanggan</button>
         </form>

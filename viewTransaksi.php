@@ -6,6 +6,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <title>Jogja Konveksi</title>
     <link rel="stylesheet" href="static/style.css">
+    <script>
+        function printTransactionByInvoice() {
+            var invoiceCode = prompt("Masukkan Kode Invoice:");
+            if (invoiceCode) {
+                var transactionTable = document.querySelector('.paraHeader table');
+                var rows = transactionTable.querySelectorAll('tr');
+                var printContents = '';
+                var header = transactionTable.querySelector('tr').outerHTML; // Menambahkan header tabel
+                for (var i = 1; i < rows.length; i++) { // Mulai dari 1 untuk melewati header
+                    var cells = rows[i].querySelectorAll('td');
+                    if (cells.length > 0 && cells[0].textContent.trim() === invoiceCode) {
+                        printContents += rows[i].outerHTML;
+                    }
+                }
+                if (printContents) {
+                    var originalContents = document.body.innerHTML;
+                    document.body.innerHTML = '<table border="1">' + header + printContents + '</table>';
+                    window.print();
+                    document.body.innerHTML = originalContents;
+                } else {
+                    alert('Kode Invoice tidak ditemukan.');
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="nav_container">
@@ -35,12 +60,12 @@
         <div class="headingContainer">
             <h1>Tabel Transaksi</h1>
             <div class="paraHeader">
-            <?php include 'view_transaksi.php'?>
+                <?php include 'view_transaksi.php' ?>
             </div>
             <div class="menuData">
                 <div class="itemMenu" onclick="window.location.href='insert_transaksi.php';">Tambah Data</div>
-                
                 <div class="itemMenu" onclick="window.location.href='delete_transaksi.php';">Hapus Data</div>
+                <div class="itemMenu" onclick="printTransactionByInvoice();">Cetak Transaksi</div>
             </div>
         </div>
     </div>

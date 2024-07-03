@@ -13,10 +13,10 @@
         <div id="message"></div>
         <form id="jasaForm">
             <div class="form-group">
-                <label for="kd_barang">Kd Barang</label>
-                <input type="text" name="kd_barang" id="kd_barang" required>
+                <label for="Kd_Barang">Kd Barang</label>
+                <input type="text" name="Kd_Barang" id="Kd_Barang" required>
             </div>
-            <button type="button" onclick="callPhpFunction()">Tambah Barang</button>
+            <button type="button" onclick="callPhpFunction()">Delete Barang</button>
         </form>
     </div>
 

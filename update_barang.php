@@ -9,13 +9,13 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Barang</title>
+    <title>Update Barang</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="static/style-ad.css">
 </head>
 <body>
 <div class="jasa">
-        <h1>Tambah Data Barang</h1>
+        <h1>Upadate Data Barang</h1>
         <div id="message"></div>
         <form id="jasaForm">
             <div class="form-group">
@@ -34,7 +34,7 @@
                 <label for="satuan">Satuan</label>
                 <input type="text" name="satuan" id="satuan" required>
             </div>
-            <button type="button" onclick="callPhpFunction()">Tambah Barang</button>
+            <button type="button" onclick="callPhpFunction()">Update Barang</button>
         </form>
     </div>
 

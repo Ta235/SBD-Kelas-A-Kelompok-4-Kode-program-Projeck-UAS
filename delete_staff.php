@@ -14,10 +14,10 @@
         <div id="message"></div>
         <form id="jasaForm">
             <div class="form-group">
-                <label for="kd_staff">Kd Staff</label>
-                <input type="text" name="kd_staff" id="kd_staff" required>
+                <label for="kd_Staff">Kd Staff</label>
+                <input type="text" name="kd_Staff" id="kd_Staff" required>
             </div>
-            <button type="button" onclick="callPhpFunction()">Tambah Staff</button>
+            <button type="button" onclick="callPhpFunction()">Hapus Staff</button>
         </form>
     </div>
 

@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "UPDATE `pelanggan` SET `Nama_Pelanggan`='$nama_pelanggan',`Nomor_pelanggan`='$nomor_pelanggan' WHERE `Kd_Pelanggan` = '$kd_pelanggan'";
         $result = $koneksi->query($sql);
         if($result){
-            echo "Success \n $sql \n $result";
+            echo "\n Success ";
         } else {
             echo "Gagal";
         }
